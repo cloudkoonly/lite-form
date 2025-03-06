@@ -1,0 +1,40 @@
+form:
+  id: "feedback"
+  title: "Customer Feedback Form"
+  description: "We value your feedback! Please help us improve our services."
+  theme:
+    primary_color: "#28a745"
+    font_family: "Arial"
+  sections:
+    - type: "text"
+      label: "Name"
+      required: true
+      placeholder: "Your name"
+    - type: "text"
+      label: "Email"
+      required: true
+      placeholder: "your.email@example.com"
+      validation:
+        pattern: "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
+        message: "Please enter a valid email address"
+    - type: "select"
+      label: "Department"
+      required: true
+      options:
+        - "Sales"
+        - "Support"
+        - "Technical"
+        - "Billing"
+    - type: "checkbox"
+      label: "Features"
+      required: true
+      options:
+        - "Feature 1"
+        - "Feature 2"
+        - "Feature 3"
+        - "Feature 4"
+    - type: "textarea"
+      label: "Your Feedback"
+      required: true
+      placeholder: "Please share your experience"
+      rows: 5

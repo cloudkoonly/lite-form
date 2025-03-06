@@ -1,0 +1,39 @@
+form:
+  id: "default"
+  version: "1.0.0"
+  title: "Sample Form"
+  description: "This is a sample form with various input types"
+  theme:
+    primary_color: "#007bff"
+    font_family: "Arial"
+    background_color: "#f8f9fa"
+  sections:
+    - type: "text"
+      label: "Your Name"
+      required: true
+      placeholder: "Enter your name"
+      validation:
+        min_length: 2
+        max_length: 50
+
+    - type: "date"
+      label: "Date of Birth"
+      required: true
+      validation:
+        min: "1900-01-01"
+        max: "2025-12-31"
+
+    - type: "radio"
+      label: "Gender"
+      required: true
+      options:
+        - "Male"
+        - "Female"
+        - "Other"
+
+    - type: "file"
+      label: "Profile Picture"
+      required: false
+      accept: "image/*"
+      validation:
+        max_size: 5242880  # 5MB in bytes
