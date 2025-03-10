@@ -1,0 +1,52 @@
+{
+  "form": {
+    "id": "product",
+    "title": "Product Experience Survey",
+    "description": "Thank you for participating in our product survey!",
+    "posted_by": "Product Team",
+    "theme": {
+      "primary_color": "#2d8cf0",
+      "font_family": "Helvetica Neue"
+    },
+    "sections": [
+      {
+        "type": "text",
+        "label": "Your Name",
+        "required": true,
+        "placeholder": "Please enter your name",
+        "validation": {
+          "min_length": 2,
+          "max_length": 20
+        }
+      },
+      {
+        "type": "radio",
+        "label": "How often do you use our product?",
+        "required": true,
+        "options": [
+          "Daily",
+          "Weekly",
+          "Monthly",
+          "Rarely"
+        ]
+      },
+      {
+        "type": "radio",
+        "label": "Overall Satisfaction",
+        "required": true,
+        "options": [
+          "Very Satisfied",
+          "Satisfied",
+          "Neutral",
+          "Dissatisfied"
+        ]
+      },
+      {
+        "type": "textarea",
+        "label": "What features would you like to see?",
+        "hint": "Please share your suggestions",
+        "placeholder": "Your feedback is valuable to us"
+      }
+    ]
+  }
+}

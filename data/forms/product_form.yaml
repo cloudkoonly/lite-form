@@ -2,6 +2,7 @@ form:
   id: "product"
   title: "Product Experience Survey"
   description: "Thank you for participating in our product survey!"
+  posted_by: "Customer Support"
   theme:
     primary_color: "#2d8cf0"
     font_family: "Helvetica Neue"

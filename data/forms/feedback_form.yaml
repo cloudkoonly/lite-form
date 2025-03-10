@@ -2,6 +2,7 @@ form:
   id: "feedback"
   title: "Customer Feedback Form"
   description: "We value your feedback! Please help us improve our services."
+  posted_by: "Customer Support"
   theme:
     primary_color: "#28a745"
     font_family: "Arial"

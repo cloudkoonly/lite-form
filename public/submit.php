@@ -49,7 +49,7 @@ try {
     $formId = isset($formData['form_id']) ? $formData['form_id'] : 'default';
     
     // Create form-specific directories
-    $dirPath = __DIR__ . '/../submissions/' . $formId . '_form';
+    $dirPath = __DIR__ . '/../data/submissions/' . $formId . '_form';
     $uploadPath = $dirPath . '/uploads';
     
     // Create directories if they don't exist

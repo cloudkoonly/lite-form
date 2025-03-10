@@ -3,8 +3,13 @@
     --font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
-body {
+html,body {
     font-family: var(--font-family);
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 .form-section {
@@ -45,4 +50,18 @@ body {
 .form-control:focus {
     border-color: var(--primary-color);
     box-shadow: 0 0 0 0.25rem rgba(45, 140, 240, 0.25);
+}
+
+.content-wrapper {
+    flex: 1 0 auto;
+    margin-bottom: 20px;
+}
+footer {
+    flex-shrink: 0;
+    text-align: center;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    color: #6c757d;
+    font-size: 0.875rem;
 }

@@ -3,6 +3,7 @@ form:
   version: "1.0.0"
   title: "Sample Form"
   description: "This is a sample form with various input types"
+  posted_by: "Lite Form"
   theme:
     primary_color: "#007bff"
     font_family: "Arial"

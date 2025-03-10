@@ -3,12 +3,19 @@ class FormParser {
         this.formData = null;
     }
 
-    parseYAML(yamlContent) {
+    parseYAML(content) {
         try {
-            this.formData = jsyaml.load(yamlContent);
+            // If content is already an object (parsed JSON), use it directly
+            if (typeof content === 'object' && content !== null) {
+                this.formData = content;
+            } else {
+                // Otherwise parse as YAML
+                this.formData = jsyaml.load(content);
+            }
+            this.validateSchema(this.formData);
             return this.formData;
         } catch (e) {
-            console.error('Error parsing YAML:', e);
+            console.error('Error parsing form configuration:', e);
             throw e;
         }
     }
